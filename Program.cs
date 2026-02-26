@@ -6,7 +6,7 @@
         {
             //Part 1, twin!
 
-            Part1();
+            Part3();
 
 
         }
@@ -33,7 +33,72 @@
 
 
         }
+
+        public static void Part2() 
+        {
+            Random generator = new Random();
+            int num, guess;
+            
+            
+            num = generator.Next(501);
+
+
+            Console.WriteLine("Guess your random number from 0 to 500!");
+            int.TryParse(Console.ReadLine(), out guess);
+
+            while (guess != num)
+           {
+                Console.WriteLine("Try again!");
+                int.TryParse(Console.ReadLine(), out guess);
+
+                if (guess < num)
+                {
+                    Console.WriteLine("Go up!");
+                    Console.WriteLine("Guess your new number!");
+                }
+
+                if (guess > num)
+                {
+                    Console.WriteLine("Go down!");
+                    Console.WriteLine("Guess your new number!");
+                }
+
+                
+            }  
+        
+                if (guess == num)
+                {
+                    Console.WriteLine("Nice one!");
+                }
+        
+        
+        
+        
+        
+        }
+        public static void Part3() 
+        {
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }
     }   
+        
+     
+    
+        
+        
+        
+        
+        
+        
+    
 
         
 }
